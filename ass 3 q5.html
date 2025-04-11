@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #d91515;
+            padding: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links li {
+            padding: 10px;
+        }
+
+        .nav-links a {
+            color: rgb(61, 222, 3);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: rgb(126, 22, 253);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+          <div><li><a href="#" ><select style="color:rgb(61, 222, 3); background-color: #d91515; "><option>home</option><option><a href="#">sarkar</a></option><option><a href="#">java</a></option><option><a href="#">html</a></option></select></a></li></div>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

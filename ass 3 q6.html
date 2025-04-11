@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Card Design using HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: cadetblue;
+}
+
+@media (max-width: 384px) {
+    body {
+      background-color: lightblue;
+    }
+    .card-container{
+  
+        flex-direction: column;
+    }
+  }  
+.card-container{
+    display: flexbox;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color:rgb(9, 253, 225);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 10px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 50%;
+    
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #111;
+    font-size: 15px;
+    line-height: 2.3;
+
+}
+.card:hover {
+    transform: scale(1.1); 
+    
+}
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="D:\HTML\london.jpg">
+            <div class="card-content">
+                <h3><center>Paris</center></h3>
+                <p><center>The Eiffel Tower lights up beautifully at night,creating a magical parisian skyline.</center></p>
+                <br>
+                <center><button><input type="button">visit now</button></center>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="D:\HTML\america.jpeg">
+            <div class="card-content">
+                <h3><center>London</center></h3>
+                <p><center>The majestic Elizabeth Tower and the houses of parliament, a symbol of British history and politics.</center></p>
+                <br>
+                <center><button><input type="button">visit now</button></center>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="D:\HTML\india.jpeg">
+            <div class="card-content">
+                <h3><center>india</center></h3>
+                <p><center>An engineering masterpiece, the taj mahel attracts millions of visitors from around the world.</center></p>
+                <br>
+                <center><button><input type="button">visit now</button></center>
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
